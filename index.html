@@ -25,7 +25,7 @@
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Software Developer</p>
+                <span class="input">Software Developer</span>
                 <h1>Hi, I'm <span>Manoj K A</span><br> From Karnataka</h1>
             </div>
         </div>
@@ -213,6 +213,15 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.012"></script>
+  <script>
+      var typed = new Typed(".input", {
+          strings:["Software Engineer.", ".NET Developer.","Web developer."],
+          typespeed:2,
+          backspeed:2,
+          loop: true
+      });
   </script>
 </body>
 </html>
